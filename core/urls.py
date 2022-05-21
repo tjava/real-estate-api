@@ -9,3 +9,7 @@ from core.settings.base import MEDIA_ROOT
 urlpatterns = [
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=MEDIA_ROOT)
+
+admin.site.site_header = "Real Estate Admin"
+admin.site.site_title = "Real Estate Admin Panel"
+admin.site.index_title = "Welcome to Real Estate Admin Panel"
