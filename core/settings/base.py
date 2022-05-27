@@ -49,6 +49,8 @@ LOCAL_APPS = [
     "api.users",
     "api.profiles",
     "api.ratings",
+    "api.properties",
+    "api.enquiries",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PERTY_APPS + LOCAL_APPS

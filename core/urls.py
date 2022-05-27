@@ -11,6 +11,9 @@ urlpatterns = [
     path("api/v1/auth/", include("djoser.urls")),
     path("api/v1/auth/", include("djoser.urls.jwt")),
     path("api/v1/profile/", include("api.profiles.urls")),
+    path("api/v1/properties/", include("api.properties.urls")),
+    path("api/v1/ratings/", include("api.ratings.urls")),
+    path("api/v1/enquiries/", include("api.enquiries.urls")),
 ] + static(settings.MEDIA_URL, document_root=MEDIA_ROOT)
 
 admin.site.site_header = "Real Estate Admin"
